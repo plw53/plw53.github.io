@@ -1,0 +1,895 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Liwei Pan">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Markdown基本语法1.准备工作 vscode必要插件 Markdown Preview Enhance Markdown PDF Markdown All in One Paste Image    2.基本语法 标题标题共六级 123# 一级## 二级... 列表有序列表 1231. 打开冰箱2. 把大象塞进去3. 关上冰箱 无序列表 1- 标题 任务列表 123- [ ] 吃饭- [ ]">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习markdown">
+<meta property="og:url" content="http://example.com/2025/06/29/%E5%AD%A6%E4%B9%A0markdown/index.html">
+<meta property="og:site_name" content="mob_dom">
+<meta property="og:description" content="Markdown基本语法1.准备工作 vscode必要插件 Markdown Preview Enhance Markdown PDF Markdown All in One Paste Image    2.基本语法 标题标题共六级 123# 一级## 二级... 列表有序列表 1231. 打开冰箱2. 把大象塞进去3. 关上冰箱 无序列表 1- 标题 任务列表 123- [ ] 吃饭- [ ]">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="chrome://branding/content/about-logo@2x.png">
+<meta property="og:image" content="http://example.com/images/%E5%AD%A6%E4%B9%A0markdown/test.png">
+<meta property="article:published_time" content="2025-06-29T09:58:24.000Z">
+<meta property="article:modified_time" content="2025-06-30T10:36:56.024Z">
+<meta property="article:author" content="Liwei Pan">
+<meta property="article:tag" content="原创">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="chrome://branding/content/about-logo@2x.png">
+  
+  
+  
+  <title>学习markdown - mob_dom</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"CxaE4GOsAeXULRaKknoUizc8-gzGzoHsz","app_key":"7FI1tATVGxH3X8w2ppH5lOy9","server_url":"https://cxae4gos.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>mob_dom</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="学习markdown"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        Liwei Pan
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-06-29 17:58" pubdate>
+          2025年6月29日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          622 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          6 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">学习markdown</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="Markdown基本语法"><a href="#Markdown基本语法" class="headerlink" title="Markdown基本语法"></a>Markdown基本语法</h1><h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h3><ol>
+<li><strong>vscode必要插件</strong><ul>
+<li>Markdown Preview Enhance</li>
+<li>Markdown PDF</li>
+<li>Markdown All in One</li>
+<li>Paste Image</li>
+</ul>
+</li>
+</ol>
+<h3 id="2-基本语法"><a href="#2-基本语法" class="headerlink" title="2.基本语法"></a>2.基本语法</h3><ol>
+<li><p><strong>标题</strong><br>标题共六级</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs md"><span class="hljs-section"># 一级</span><br><span class="hljs-section">## 二级</span><br>...<br></code></pre></td></tr></table></figure></li>
+<li><p><strong>列表</strong><br>有序列表</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs md"><span class="hljs-bullet">1.</span> 打开冰箱<br><span class="hljs-bullet">2.</span> 把大象塞进去<br><span class="hljs-bullet">3.</span> 关上冰箱<br></code></pre></td></tr></table></figure>
+<p>无序列表</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs md"><span class="hljs-bullet">-</span> 标题<br></code></pre></td></tr></table></figure>
+<p>任务列表</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs md"><span class="hljs-bullet">-</span> [ ] 吃饭<br><span class="hljs-bullet">-</span> [ ] 睡觉<br><span class="hljs-bullet">-</span> [x] 打豆豆<br></code></pre></td></tr></table></figure>
+<ul>
+<li><input disabled="" type="checkbox"> 吃饭</li>
+<li><input disabled="" type="checkbox"> 睡觉</li>
+<li><input checked="" disabled="" type="checkbox"> 打豆豆</li>
+</ul>
+</li>
+<li><p><strong>引用</strong></p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs md"><span class="hljs-quote">&gt; 引用的内容</span><br></code></pre></td></tr></table></figure>
+<blockquote>
+<p>这是一段引用</p>
+<blockquote>
+<p>可以嵌套</p>
+</blockquote>
+</blockquote>
+</li>
+<li><p><strong>表格</strong></p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs md">|左对齐|居中对齐|右对齐|<br>|:--|--:|:--:|<br>|a|b|c|<br></code></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="right">居中对齐</th>
+<th align="center">右对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">a</td>
+<td align="right">b</td>
+<td align="center">c</td>
+</tr>
+</tbody></table>
+</li>
+<li><p><strong>段落</strong></p>
+<ul>
+<li>换行 ———两个以上的空格后回车&#x2F;或者空一行再写</li>
+<li>分割线<code>***/---</code></li>
+</ul>
+<hr>
+<ul>
+<li>字体</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">字体</th>
+<th align="center">代码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><em>斜体</em></td>
+<td align="center"><code>*斜体*</code></td>
+</tr>
+<tr>
+<td align="center">&#x3D;&#x3D;高亮&#x3D;&#x3D;</td>
+<td align="center"><code>==高亮==</code></td>
+</tr>
+<tr>
+<td align="center"><strong>粗体</strong></td>
+<td align="center"><code>**粗体**</code></td>
+</tr>
+<tr>
+<td align="center"><em><strong>斜粗体</strong></em></td>
+<td align="center"><code>***斜粗体***</code></td>
+</tr>
+<tr>
+<td align="center"><del>删除</del></td>
+<td align="center"><code>~~删除~~</code></td>
+</tr>
+<tr>
+<td align="center"><u>下划线</u></td>
+<td align="center"><code>&lt;u&gt;下划线&lt;/u&gt;</code></td>
+</tr>
+<tr>
+<td align="center">下<del>标</del></td>
+<td align="center"><code>下~标~</code></td>
+</tr>
+<tr>
+<td align="center">上^标^</td>
+<td align="center"><code>上^标^</code></td>
+</tr>
+</tbody></table>
+<ul>
+<li>脚注<br>mob_dom<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="Liwei Pan">[1]</span></a></sup></li>
+</ul>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs md">mob<span class="hljs-emphasis">_dom[^1]</span><br><span class="hljs-emphasis"></span><br><span class="hljs-emphasis">[^1]:Liwei Pan</span><br></code></pre></td></tr></table></figure></li>
+<li><p><strong>代码</strong><br>单行代码<code>code</code></p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs md">单行代码<span class="hljs-code">``code`</span>`<br></code></pre></td></tr></table></figure>
+<p>代码块</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs md"><span class="hljs-code">```c</span><br><span class="hljs-code">int a = 1;</span><br><span class="hljs-code">```</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">int</span> a= <span class="hljs-number">1</span>;<br></code></pre></td></tr></table></figure></li>
+<li><p><strong>超链接</strong></p>
+<ul>
+<li>方法一</li>
+</ul>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs md">[<span class="hljs-string">参考教程</span>](<span class="hljs-link">https://www.bilibili.com/video/BV1JA411h7Gw/?spm_id_from=333.337.search-card.all.click&amp;vd_source=f6e61b8f5aa31c4f51b2abff69494cbc &quot;来自bilibili&quot;</span>)<br></code></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JA411h7Gw/?spm_id_from=333.337.search-card.all.click&vd_source=f6e61b8f5aa31c4f51b2abff69494cbc" title="来自bilibili">参考教程</a></p>
+<ul>
+<li>方法二 引用链接</li>
+</ul>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs md">[<span class="hljs-string">参考教程</span>][<span class="hljs-symbol">id</span>]<br>[<span class="hljs-symbol">id</span>]:<span class="hljs-link">https://www.bilibili.com/video/BV1JA411h7Gw/?spm_id_from=333.337.search-card.all.click&amp;vd_source=f6e61b8f5aa31c4f51b2abff69494cbc &quot;来自bilibili&quot;</span><br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><p>方法三 直接输入URL<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JA411h7Gw/?spm_id_from=333.337.search-card.all.click&vd_source=f6e61b8f5aa31c4f51b2abff69494cbc">https://www.bilibili.com/video/BV1JA411h7Gw/?spm_id_from=333.337.search-card.all.click&amp;vd_source=f6e61b8f5aa31c4f51b2abff69494cbc</a></p>
+</li>
+<li><p>链接到标题</p>
+</li>
+</ul>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs md">请参考[<span class="hljs-string">标题</span>](<span class="hljs-link">#1准备工作</span>)<br></code></pre></td></tr></table></figure>
+<p>请参考<a href="#1%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">标题</a></p>
+</li>
+<li><p><strong>图片</strong> </p>
+<ul>
+<li>方法一 链接图片</li>
+</ul>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs md">![<span class="hljs-string">火狐</span>](<span class="hljs-link">chrome://branding/content/about-logo@2x.png &quot;火狐&quot;</span>)<br></code></pre></td></tr></table></figure>
+<p><img src="chrome://branding/content/about-logo@2x.png" srcset="/img/loading.gif" lazyload alt="火狐" title="火狐"></p>
+<ul>
+<li>方法二<br>网上很多方法不适用，这里找到了一个比较好用的方法，可以同时在预览和网站显示出图片。<br>source下新建images，每一篇文章都可以新建一个同名文件夹防止混乱，然后直接复制图片到代码即可</li>
+</ul>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs md">![<span class="hljs-string">测试</span>](<span class="hljs-link">../images/学习markdown/test.png</span>)<br></code></pre></td></tr></table></figure>
+<p><img src="/../images/%E5%AD%A6%E4%B9%A0markdown/test.png" srcset="/img/loading.gif" lazyload alt="测试"></p>
+</li>
+</ol>
+<h3 id="3-其他操作"><a href="#3-其他操作" class="headerlink" title="3.其他操作"></a>3.其他操作</h3><ul>
+<li><p><strong>插入latex公式</strong></p>
+<ul>
+<li>行内显示公式<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs md">$f(x)=ax+b$<br></code></pre></td></tr></table></figure>
+$f(x)&#x3D;ax+b$</li>
+<li>块内显示公式<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs md">$$<br>\begin&#123;Bmatrix&#125;<br>a &amp; b \\  <br>c &amp; d  <br>\end&#123;Bmatrix&#125;<br>$$      <br></code></pre></td></tr></table></figure>
+$$<br>\begin{Bmatrix}<br>a &amp; b \<br>c &amp; d<br>\end{Bmatrix}<br>$$</li>
+</ul>
+</li>
+<li><p><strong>html&#x2F;css语法</strong></p>
+<ul>
+<li>更改文字字体、颜色、单行居中<br>居中操作需要编写css代码：ctrl+shift+p搜索“Markdown Preview Enhanced：Customize CSS”，在style中使用css语法改标题格式等<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs md"><span class="hljs-section"># <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">cneter</span>&gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span> = <span class="hljs-string">&quot;楷体&quot;</span> <span class="hljs-attr">color</span> = <span class="hljs-string">orange</span>&gt;</span></span>大标题居中楷体橙色 <span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">center</span>&gt;</span></span></span><br></code></pre></td></tr></table></figure>
+<h1 id="大标题居中楷体橙色"><a href="#大标题居中楷体橙色" class="headerlink" title="大标题居中楷体橙色 "></a><cneter><font face = "楷体" color = orange>大标题居中楷体橙色 </font></center></h1></li>
+<li>更改图片大小位置</li>
+</ul>
+</li>
+<li><p><strong>个性化设置</strong><br>File-Preferences-Settings</p>
+</li>
+</ul>
+<h3 id="4-导出PDF"><a href="#4-导出PDF" class="headerlink" title="4.导出PDF"></a>4.导出PDF</h3><ul>
+<li>使用Markdown PDF</li>
+<li>Open in Browser-手动另存为PDF</li>
+</ul>
+<section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>Liwei Pan
+<a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Hello-World/" class="category-chain-item">Hello World!</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%8E%9F%E5%88%9B/" class="print-no-link">#原创</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>学习markdown</div>
+      <div>http://example.com/2025/06/29/学习markdown/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Liwei Pan</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年6月29日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/06/10/Testing-text/" title="测试文章">
+                        <span class="hidden-mobile">测试文章</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"CxaE4GOsAeXULRaKknoUizc8-gzGzoHsz","appKey":"7FI1tATVGxH3X8w2ppH5lOy9","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
