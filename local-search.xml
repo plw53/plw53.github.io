@@ -129,31 +129,6 @@
   
   
   <entry>
-    <title>测试文章</title>
-    <link href="/2025/06/10/Testing-text/"/>
-    <url>/2025/06/10/Testing-text/</url>
-    
-    <content type="html"><![CDATA[<p>这是一篇测试文章</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Hello World!</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>原创</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>2024摄影集反</title>
     <link href="/2025/01/02/2024%E6%91%84%E5%BD%B1%E9%9B%86%E5%8F%8D/"/>
     <url>/2025/01/02/2024%E6%91%84%E5%BD%B1%E9%9B%86%E5%8F%8D/</url>
@@ -193,6 +168,31 @@
       <category>画廊</category>
       
       <category>2024</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>原创</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>测试文章</title>
+    <link href="/2000/06/10/Testing-text/"/>
+    <url>/2000/06/10/Testing-text/</url>
+    
+    <content type="html"><![CDATA[<p>这是一篇测试文章</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Hello World!</category>
       
     </categories>
     
