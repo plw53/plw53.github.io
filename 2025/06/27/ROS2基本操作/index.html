@@ -19,16 +19,16 @@
   <meta name="author" content="Liwei Pan">
   <meta name="keywords" content="">
   
-    <meta name="description" content="ROS2 基本操作1. 构建项目 构建工作空间  12mkdir -p topic_ws&#x2F;src cd topic_ws&#x2F;src  创建功能包在src目录下   python  1ros2 pkg create demo_python_pkg --build-type ament_python --dependencies rclpy example_interface --license Apa">
+    <meta name="description" content="ROS2 基本操作1. 构建一个节点 构建工作空间  12mkdir -p topic_ws&#x2F;src cd topic_ws&#x2F;src  创建功能包在src目录下   python  1ros2 pkg create demo_python_pkg --build-type ament_python --dependencies rclpy example_interface --license A">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ROS2基本操作">
 <meta property="og:url" content="http://example.com/2025/06/27/ROS2%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/index.html">
 <meta property="og:site_name" content="mob_dom">
-<meta property="og:description" content="ROS2 基本操作1. 构建项目 构建工作空间  12mkdir -p topic_ws&#x2F;src cd topic_ws&#x2F;src  创建功能包在src目录下   python  1ros2 pkg create demo_python_pkg --build-type ament_python --dependencies rclpy example_interface --license Apa">
+<meta property="og:description" content="ROS2 基本操作1. 构建一个节点 构建工作空间  12mkdir -p topic_ws&#x2F;src cd topic_ws&#x2F;src  创建功能包在src目录下   python  1ros2 pkg create demo_python_pkg --build-type ament_python --dependencies rclpy example_interface --license A">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/ROS2%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/humble.png">
 <meta property="article:published_time" content="2025-06-27T08:51:29.000Z">
-<meta property="article:modified_time" content="2025-07-02T08:12:35.459Z">
+<meta property="article:modified_time" content="2025-07-02T08:26:56.358Z">
 <meta property="article:author" content="Liwei Pan">
 <meta property="article:tag" content="原创">
 <meta name="twitter:card" content="summary_large_image">
@@ -243,7 +243,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          56 字
+          91 字
         
       </span>
     
@@ -305,7 +305,7 @@
             
               <div class="markdown-body">
                 
-                <h1 id="ROS2-基本操作"><a href="#ROS2-基本操作" class="headerlink" title="ROS2 基本操作"></a>ROS2 基本操作</h1><h3 id="1-构建项目"><a href="#1-构建项目" class="headerlink" title="1. 构建项目"></a>1. 构建项目</h3><ol>
+                <h1 id="ROS2-基本操作"><a href="#ROS2-基本操作" class="headerlink" title="ROS2 基本操作"></a>ROS2 基本操作</h1><h3 id="1-构建一个节点"><a href="#1-构建一个节点" class="headerlink" title="1. 构建一个节点"></a>1. 构建一个节点</h3><ol>
 <li><strong>构建工作空间</strong></li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">mkdir</span> -p topic_ws/src <br><span class="hljs-built_in">cd</span> topic_ws/src<br></code></pre></td></tr></table></figure>
@@ -322,10 +322,18 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ros2 pkg create demo_cpp_pkg --build-type ament_cmake --dependencies rclcpp geometry_msg turtlesim --license Apache-2.0<br></code></pre></td></tr></table></figure>
 
 <ol start="3">
-<li><p><strong>节点示例代码</strong></p>
-</li>
-<li><p><strong>构建功能包</strong></p>
-</li>
+<li><strong>节点示例代码</strong><br>在功能包的src目录下创建.cpp或.py文件编写代码<br><img src="/../images/ROS2%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/3-1.png" srcset="/img/loading.gif" lazyload alt="3-1"><br><img src="/../images/ROS2%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/3-2.png" srcset="/img/loading.gif" lazyload alt="3-2"></li>
+</ol>
+<ul>
+<li>python节点代码示例</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> rclpy<br><span class="hljs-keyword">from</span> rclpy.node<br></code></pre></td></tr></table></figure>
+<ul>
+<li>c++节点代码示例</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c++"><br></code></pre></td></tr></table></figure>
+<ol start="4">
+<li><strong>构建功能包</strong></li>
 <li></li>
 </ol>
 <p>未完待续</p>
