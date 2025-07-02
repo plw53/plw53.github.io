@@ -28,7 +28,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/ROS2%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/humble.png">
 <meta property="article:published_time" content="2025-06-27T08:51:29.000Z">
-<meta property="article:modified_time" content="2025-07-02T08:10:50.008Z">
+<meta property="article:modified_time" content="2025-07-02T08:12:35.459Z">
 <meta property="article:author" content="Liwei Pan">
 <meta property="article:tag" content="原创">
 <meta name="twitter:card" content="summary_large_image">
@@ -315,14 +315,14 @@
 <ul>
 <li>python</li>
 </ul>
-<figure class="highlight brainfuck"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs brainfuck"><span class="hljs-comment">ros2 pkg create demo_python_pkg</span> <span class="hljs-literal">--</span><span class="hljs-comment">build</span><span class="hljs-literal">-</span><span class="hljs-comment">type ament_python</span> <span class="hljs-literal">--</span><span class="hljs-comment">dependencies rclpy example_interface</span> <span class="hljs-literal">--</span><span class="hljs-comment">license Apache</span><span class="hljs-literal">-</span><span class="hljs-comment">2</span><span class="hljs-string">.</span><span class="hljs-comment">0</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ros2 pkg create demo_python_pkg --build-type ament_python --dependencies rclpy example_interface --license Apache-2.0<br></code></pre></td></tr></table></figure>
 <ul>
 <li>c++</li>
 </ul>
-<figure class="highlight brainfuck"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs brainfuck"><span class="hljs-comment">ros2 pkg create demo_cpp_pkg</span> <span class="hljs-literal">--</span><span class="hljs-comment">build</span><span class="hljs-literal">-</span><span class="hljs-comment">type ament_cmake</span> <span class="hljs-literal">--</span><span class="hljs-comment">dependencies rclcpp geometry_msg turtlesim</span> <span class="hljs-literal">--</span><span class="hljs-comment">license Apache</span><span class="hljs-literal">-</span><span class="hljs-comment">2</span><span class="hljs-string">.</span><span class="hljs-comment">0</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ros2 pkg create demo_cpp_pkg --build-type ament_cmake --dependencies rclcpp geometry_msg turtlesim --license Apache-2.0<br></code></pre></td></tr></table></figure>
 
 <ol start="3">
-<li><p><strong>节点示例代码</strong><br><img src="/image.png" srcset="/img/loading.gif" lazyload alt="3-1"> </p>
+<li><p><strong>节点示例代码</strong></p>
 </li>
 <li><p><strong>构建功能包</strong></p>
 </li>
