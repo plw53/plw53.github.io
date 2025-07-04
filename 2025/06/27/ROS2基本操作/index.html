@@ -28,7 +28,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/ROS2%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/humble.png">
 <meta property="article:published_time" content="2025-06-27T08:51:29.000Z">
-<meta property="article:modified_time" content="2025-07-04T14:46:17.718Z">
+<meta property="article:modified_time" content="2025-07-04T14:57:49.896Z">
 <meta property="article:author" content="Liwei Pan">
 <meta property="article:tag" content="原创">
 <meta name="twitter:card" content="summary_large_image">
@@ -243,7 +243,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          624 字
+          690 字
         
       </span>
     
@@ -361,9 +361,11 @@
 </ul>
 </li>
 <li><strong>服务接口</strong><ul>
-<li>创建功能包<pre><code class="language-bash">ros2 pkg create chapt4_interfaces --dependencise
-</code></pre>
-</li>
+<li>创建功能包<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ros2 pkg create chapt4_interfaces --dependencies sensor_msgs rosidl_default_generators --license Apache-2.0<br></code></pre></td></tr></table></figure></li>
+<li>chapt4_interfaces下新建srv文件夹，文件夹下新建文件FaceDetector.srv</li>
+<li>编写代码<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs srv"># 请求部分<br>sensor_msgs/Image image # 原始图像<br>---<br># 响应部分     <br>int16 number<br>float32 use_time<br>int32[] top<br></code></pre></td></tr></table></figure></li>
+<li>在CMakeLists.txt中注册<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs cmake">rosidl_generate_interfaces(<span class="hljs-variable">$&#123;PROJECT_NAME&#125;</span><br>   <span class="hljs-string">&quot;srv/FaceDetector.srv&quot;</span><br>   DEPENDENCIES sensor_msgs<br>)<br></code></pre></td></tr></table></figure></li>
+<li>在package.xml中声明<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">member_of_group</span>&gt;</span>rosidl_interfaces_packages<span class="hljs-tag">&lt;/<span class="hljs-name">member_of_group</span>&gt;</span><br></code></pre></td></tr></table></figure></li>
 </ul>
 </li>
 </ol>
