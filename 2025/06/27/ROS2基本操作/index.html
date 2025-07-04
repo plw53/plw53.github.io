@@ -28,7 +28,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/ROS2%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/humble.png">
 <meta property="article:published_time" content="2025-06-27T08:51:29.000Z">
-<meta property="article:modified_time" content="2025-07-04T15:01:37.156Z">
+<meta property="article:modified_time" content="2025-07-04T15:02:30.310Z">
 <meta property="article:author" content="Liwei Pan">
 <meta property="article:tag" content="原创">
 <meta name="twitter:card" content="summary_large_image">
@@ -360,11 +360,16 @@
 </ul>
 <p> 其中builtin_interfaces可以提供系统时间戳，rosidl_default_generators可以把自定义消息文件转换成c++ python原码</p>
 <ul>
-<li>include 和 src 文件用不到可以删去</li>
-<li>在src&#x2F;status_interfaces新建文件夹msg，在msg下创建文件SystemStatus.msg(使用驼峰命名法)</li>
-<li>编写代码<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs msg">builtin_interfaces/Time stamp # builtin_interfaces接口功能包下的Time类型<br>string host_name <br>float32 cpu_percent<br>float64 net_sent<br></code></pre></td></tr></table></figure></li>
-<li>在CMakeLists.txt注册文件，并为其添加依赖<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs cmake"><span class="hljs-comment"># 来自rosidl_default_generators 的cmake函数，用于将msg等消息接口定义文件转换成库或头文件</span><br>rosidl_generate_interfaces(<span class="hljs-variable">$&#123;PROJECT_NAME&#125;</span><br>   <span class="hljs-string">&quot;msg/SystemStatus.msg&quot;</span><br>   DEPENDENCIES builtin_interfaces<br>)<br>...<br>ament_package()<br></code></pre></td></tr></table></figure></li>
-<li>除了修改CMakeLists.txt，最好还要在功能包清单文件package.xml中添加声明，声明该功能包是包含消息接口的功能包<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">member_of_group</span>&gt;</span>rosidl_interface_packages<span class="hljs-tag">&lt;/<span class="hljs-name">menber_of_group</span>&gt;</span><br></code></pre></td></tr></table></figure></li>
+<li><p>include 和 src 文件用不到可以删去</p>
+</li>
+<li><p>在src&#x2F;status_interfaces新建文件夹msg，在msg下创建文件SystemStatus.msg(使用驼峰命名法)</p>
+</li>
+<li><p>编写代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs msg">builtin_interfaces/Time stamp # builtin_interfaces接口功能包下的Time类型<br>string host_name <br>float32 cpu_percent<br>float64 net_sent<br></code></pre></td></tr></table></figure></li>
+<li><p>在CMakeLists.txt注册文件，并为其添加依赖</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs cmake"><span class="hljs-comment"># 来自rosidl_default_generators 的cmake函数，用于将msg等消息接口定义文件转换成库或头文件</span><br>rosidl_generate_interfaces(<span class="hljs-variable">$&#123;PROJECT_NAME&#125;</span><br>   <span class="hljs-string">&quot;msg/SystemStatus.msg&quot;</span><br>   DEPENDENCIES builtin_interfaces<br>)<br>...<br>ament_package()<br></code></pre></td></tr></table></figure></li>
+<li><p>除了修改CMakeLists.txt，最好还要在功能包清单文件package.xml中添加声明，声明该功能包是包含消息接口的功能包</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">member_of_group</span>&gt;</span>rosidl_interface_packages<span class="hljs-tag">&lt;/<span class="hljs-name">menber_of_group</span>&gt;</span><br></code></pre></td></tr></table></figure></li>
 </ul>
 </li>
 <li><p><strong>服务接口</strong></p>
